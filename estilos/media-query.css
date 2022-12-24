@@ -16,19 +16,18 @@ Grandões telas: acima de 1200px
     }
 
     section#login {
-        width: 90vw;
+        width: 80vw;
     }
 
     section#login > div#Imagem {
         float: left;
         width: 30%;
         height: 100%;
-        background-position: center center;
     }
     
     section#login > div#formulario {
         float: right;
-        width: 80%;
+        width: 70%;
     }
 }
 
@@ -36,19 +35,27 @@ Grandões telas: acima de 1200px
     body {
         background-image: linear-gradient(to top, #4aa19f, #5f2c82);
     }
-    
+
     section#login {
         width: 950px;
     }
 
     section#login > div#Imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     section#login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2em;
+    }
+
+    div#formulario > p {
+        font-size: 1.2em;
     }
 }

@@ -33,8 +33,7 @@ section#login {
     /* tudo que tiver fora da borda esconda */
     overflow: hidden;
     /* a imagem vai voltar metade desse valor */
-    transform: translate(-50%, -50%);
-
+    
     background-color: white;
     width: 250px;
     height: 515px;
@@ -44,6 +43,9 @@ section#login {
     /* coloca alguns efeitos para mostrar a largura no time estabelecido */
     transition: width .1s, height .1s;
     transition-timing-function: ease;
+    /* trasnforme sempre será a ultima linha de código */
+    transform: translate(-50%, -50%);
+
 }
 
 section#login > div#Imagem {
@@ -71,12 +73,38 @@ div.campo > label {
     display: none;
 }
 
+div.campo > i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #94cfcd;
+    font-size: 1em;
+    /* calculando a largura com a função calc das css */
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 5px;
+    /* transform tem que ser obrigatoriamente a ultima linha */
+    transform: translateY(-12px);
+}
+
+/* quando estiver digitando a caixa fica branca */ 
+div.campo > input:focus-within {
+    background-color: white;
+}
+
 form > div.campo {
     display: block;
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px 5px 0px;
 }
 
